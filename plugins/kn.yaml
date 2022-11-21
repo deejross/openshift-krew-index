@@ -1,0 +1,35 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: kn
+spec:
+  homepage: https://github.com/knative/client
+  shortDescription: Knative CLI
+  version: v0.19.1
+  description: |
+    The Knative client kn is your door to the Knative world.
+    It allows you to create Knative resources interactively
+    from the command line or from within scripts
+  caveats: ""
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/serverless/0.19.1/kn-linux-amd64-0.19.1.tar.gz
+    sha256: 008dacb1d6a4e00810e161bfd4e047c372b3f637a2ea2e4a4d6d0d64754c39a0
+    bin: kn
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/serverless/0.19.1/kn-macos-amd64-0.19.1.tar.gz
+    sha256: f45903044db0276bd7203d46eb622658750da55cf6a5091eac087e8e23a9ef8f
+    bin: kn
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/serverless/0.19.1/kn-windows-amd64-0.19.1.zip
+    sha256: d4f796f02f4166771c2091c4bd159e0bea6c3018eb3a5b2de2a5bc1cf19a5ba3
+    bin: kn

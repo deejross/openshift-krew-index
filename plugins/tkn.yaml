@@ -1,0 +1,48 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: tkn
+spec:
+  homepage: https://github.com/tektoncd/cli
+  shortDescription: A CLI for interacting with Tekton
+  version: v0.15.0
+  description: |
+    The Tekton Pipelines CLI project provides a command-line interface (CLI) for interacting with Tekton,
+    an open-source framework for Continuous Integration and Delivery (CI/CD) systems.
+  caveats: ""
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-linux-amd64-0.15.0.tar.gz
+    sha256: c98ce9de374b3e0555370ec9243fbbbb31b9c2bbe59fa0f3944925c542cd9b1e
+    bin: tkn
+  - selector:
+      matchLabels:
+        os: linux
+        arch: ppc64le
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-linux-ppc64le-0.15.0.tar.gz
+    sha256: 8391917dcefa46b7ad133913b8d16e4380822f7a058c5cc6bd6c2e4217356731
+    bin: tkn
+  - selector:
+      matchLabels:
+        os: linux
+        arch: s390x
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-linux-s390x-0.15.0.tar.gz
+    sha256: 6777eb05a5bc440ed9811a65c777c1f3fc3c2f26762121e9ee902acabdf06cfc
+    bin: tkn
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-macos-amd64-0.15.0.tar.gz
+    sha256: 5a094d719750dc3e017a2bab4b4066306140555c725e58db6adfc2c78723b6b1
+    bin: tkn
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-windows-amd64-0.15.0.zip
+    sha256: 480b3fd68e61e523b08afa761357a33d9c420a47d933768306eaab91a164b16a
+    bin: tkn.exe

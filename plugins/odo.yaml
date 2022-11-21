@@ -1,0 +1,62 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: odo
+spec:
+  homepage: https://github.com/redhat-developer/odo
+  shortDescription: Developer-focused CLI for fast & iterative application development on Kubernetes
+  version: v3.2.0
+  description: |
+    odo is a fast, iterative and straightforward CLI tool for developers who write, build,
+    and deploy applications on Kubernetes.
+  caveats: ""
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-linux-amd64.tar.gz
+    sha256: c48842cff6fa56bb17f70a1a78d436fc3eecd17dc7dea355b3e8506fc3165e65
+    bin: odo
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-linux-arm64.tar.gz
+    sha256: 2831d96008e1d89549efdc4da260237f3f314a3ca0c66be9064c2f3a165632f9
+    bin: odd
+  - selector:
+      matchLabels:
+        os: linux
+        arch: ppc64le
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-linux-ppc64le.tar.gz
+    sha256: b99533325f28330449bfa7b7b7c624f624b16b9e1b9f59349c3563b1e3387d39
+    bin: odo
+  - selector:
+      matchLabels:
+        os: linux
+        arch: s390x
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-linux-s390x.tar.gz
+    sha256: e4c6f5ab3c16d36a3b9d5e3b129116ea1a6aba110fa8bb7414acfca2814560a2
+    bin: odo
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-darwin-amd64.tar.gz
+    sha256: e056d15cd89b0d06f6faed976c4cf3f7f9986727171335840d137d5bd737157b
+    bin: odo
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: arm64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-darwin-arm64.tar.gz
+    sha256: 895df34c2c73f75df7b27d418a52bce47fa8b99a1d1d124e9c9fc6804618185f
+    bin: odo
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/odo/v3.2.0/odo-windows-amd64.exe.zip
+    sha256: 04cf4cc1293059e3dde1c8f56f14a0e6b4ae59aded958409ef841a7c9f4f8d3d
+    bin: odo.exe
