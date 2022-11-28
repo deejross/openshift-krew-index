@@ -17,21 +17,21 @@ spec:
         arch: amd64
     uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-linux-amd64-0.15.0.tar.gz
     sha256: c98ce9de374b3e0555370ec9243fbbbb31b9c2bbe59fa0f3944925c542cd9b1e
-    bin: tkn
+    bin: tkn-linux-amd64
   - selector:
       matchLabels:
         os: linux
         arch: ppc64le
     uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-linux-ppc64le-0.15.0.tar.gz
     sha256: 8391917dcefa46b7ad133913b8d16e4380822f7a058c5cc6bd6c2e4217356731
-    bin: tkn
+    bin: tkn-linux-ppc64le
   - selector:
       matchLabels:
         os: linux
         arch: s390x
     uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-linux-s390x-0.15.0.tar.gz
     sha256: 6777eb05a5bc440ed9811a65c777c1f3fc3c2f26762121e9ee902acabdf06cfc
-    bin: tkn
+    bin: tkn-linux-s390x
   - selector:
       matchLabels:
         os: darwin
@@ -45,4 +45,4 @@ spec:
         arch: amd64
     uri: https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/pipeline/0.15.0/tkn-windows-amd64-0.15.0.zip
     sha256: 480b3fd68e61e523b08afa761357a33d9c420a47d933768306eaab91a164b16a
-    bin: tkn.exe
+    bin: tkn-windows-amd64.exe
